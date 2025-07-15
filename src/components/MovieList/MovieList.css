@@ -1,0 +1,77 @@
+.movie_list {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.movie_list_header {
+  display: flex;
+  flex-wrap: nowrap; /* 關鍵：永遠單行，不換行 */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  overflow-x: hidden; /* 保險，不讓 header 超出寬度 */
+}
+
+.movie_list_heading {
+  font-size: 26px;
+  color: var(--heading_color);
+  min-width: 0;
+}
+
+.movie_list_fs {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  width: auto;
+  overflow: hidden;
+}
+
+.movie_filter {
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.movie_filter_item {
+  padding: 5px 10px;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.movie_filter_item.active {
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 500;
+}
+
+.movie_sorting {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  height: 30px;
+  padding: 0 5px;
+  margin: 0 10px;
+  min-width: 0;
+}
+
+@media (max-width: 800px) {
+  .movie_list_heading,
+  .movie_sorting {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+  }
+}

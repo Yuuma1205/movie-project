@@ -1,0 +1,46 @@
+.tv_carousel_outer {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-width: 220px;
+  overflow: visible;
+}
+.tv_carousel_window {
+  overflow: hidden;
+  width: 100%;
+}
+.tv_carousel_inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  transition: transform 0.4s;
+}
+.tv_carousel_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffe400;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.tv_carousel_arrow.left {
+  left: 0;
+}
+.tv_carousel_arrow.right {
+  right: 0;
+}
+.tv_carousel_arrow:hover {
+  opacity: 1;
+}

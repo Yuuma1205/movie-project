@@ -1,0 +1,137 @@
+.login_modal_bg {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_modal {
+  background: #181818;
+  color: #ffe400;
+  padding: 36px 32px 32px 32px;
+  border-radius: 18px;
+  min-width: 340px;
+  box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+.login_tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.login_tab {
+  font-size: 1.13rem;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  padding: 6px 24px 8px 24px;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -2px;
+  transition: border-bottom 0.18s;
+}
+.login_tab.active {
+  border-bottom: 2.5px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login_form label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 1.06rem;
+  color: #ffe400;
+}
+.login_form input {
+  padding: 9px 12px;
+  margin-top: 2px;
+  border-radius: 5px;
+  border: 1.5px solid #ffe400;
+  background: #232323;
+  color: #ffe400;
+  font-size: 1rem;
+  transition: border 0.18s;
+}
+.login_form input:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: #1d1d1d;
+}
+
+.login_btn {
+  background: #ffe400;
+  color: #181818;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  padding: 11px 0;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background 0.19s;
+}
+.login_btn:hover {
+  background: #ffd700;
+}
+.login_google {
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.login_modal input {
+  padding: 9px;
+  margin: 7px 0;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 1.02rem;
+  width: 100%;
+  background: #fafaff;
+}
+.login_modal input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #232323 inset !important;
+  box-shadow: 0 0 0 1000px #232323 inset !important;
+  -webkit-text-fill-color: #ffe400 !important;
+  color: #ffe400 !important;
+}
+.login_modal input:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: #1d1d1d;
+}
+.login_modal input {
+  background: #232323;
+  color: #ffe400;
+}
+.login_err {
+  color: #e43;
+  font-size: 1.01rem;
+  text-align: center;
+  margin-top: 6px;
+}
+.login_close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.19s;
+}
+.login_close:hover {
+  color: #222;
+}

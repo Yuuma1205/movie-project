@@ -1,0 +1,141 @@
+.navbar {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 0;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 62px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #181818;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-sizing: border-box;
+}
+
+.navbar_brand {
+  font-size: 32px;
+  color: #ffe400;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Montserrat", "Noto Sans TC", sans-serif;
+  text-decoration: none;
+  margin-right: 28px;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar_links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: 0;
+  width: auto;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.navbar_link,
+.navbar_btn,
+.navbar_search,
+.navbar_search_input,
+.navbar_search_type {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.navbar_link {
+  color: #eee;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  transition: background 0.17s, color 0.16s;
+}
+.navbar_link.active,
+.navbar_link:hover {
+  background: #ffe40033;
+  color: #ffe400;
+  text-decoration: none;
+}
+
+.navbar_btn {
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #ffe400;
+  cursor: pointer;
+  font-size: 1.08rem;
+  transition: opacity 0.18s;
+  outline: none;
+  border-radius: 6px;
+  padding: 7px 20px;
+  min-width: 0;
+}
+.navbar_btn:hover {
+  text-decoration: underline;
+  opacity: 0.82;
+}
+
+.navbar_search {
+  display: flex;
+  align-items: center;
+  background: #181818;
+  border: 1.5px solid #ffe400;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 38px;
+  margin-left: 18px;
+}
+
+.navbar_search_input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffe400;
+  font-size: 17px;
+  padding: 0 15px;
+  height: 38px;
+  flex: 1;
+  min-width: 0;
+}
+.navbar_search_input::placeholder {
+  color: #ffe400aa;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.navbar_search_btn {
+  background: transparent;
+  border: none;
+  padding: 0 13px 0 7px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffe400;
+  transition: background 0.15s;
+}
+.navbar_search_btn:hover {
+  background: #ffd600;
+}
+
+@media (max-width: 800px) {
+  .navbar_link,
+  .navbar_btn,
+  .navbar_brand,
+  .navbar_search_input,
+  .navbar_search_type {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
+  }
+}
