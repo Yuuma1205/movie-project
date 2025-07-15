@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { UserProvider } from "./context/UserContext";
 import HomePage from "./pages/Home";
 import MoviesPage from "./pages/Movies";
-import TVShowsPage from "./pages/TvShows";
+import TVShowsPage from "./pages/TVShows";
 import MyFavorites from "./pages/MyFavorites";
 import SearchPage from "./pages/Search";
 
